@@ -1,14 +1,14 @@
 var connection = require("./connection.js");
 
-var orm =[ 
+var orm = [ 
     
     {
-        selectAll: function() {
+        selectAll: function(render) {
             connection.query("SELECT * FROM burger_db;", function(err, data) {
                 if (err) {
                     throw err;
                 }
-
+                render();
                 res.render("index", {burgers: data});
             });
         }

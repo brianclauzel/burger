@@ -2,20 +2,21 @@ var orm = require("../orm.js");
 
 var burger = [
     { 
-        get: app.get("/", function(req, res) {
-            orm.selectAll();
-    })
+        get: orm.selectAll()
+   
 },
     {
 
-        post: app.post("/", function(req, res) {
-            orm.insertOne();
-    })
+        post: orm.insertOne()
+  
 },
     {   
-        update: app.update("/", function(req, res) {
-            orm.updateOne();
-    })
+        update: 
+            orm.updateOne()
+  
 }];
+
+
+
 
 module.exports = burger;
