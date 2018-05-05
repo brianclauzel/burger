@@ -1,8 +1,7 @@
-var express = require("express");
-var bodyParser = require("body-parser");
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
+    port: 3306,
     host: "localhost",
     user: "root",
     password: "root",
