@@ -2,4 +2,36 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align:center;
+    list-style: none;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.item_name {
+    font-weight: 700;
+}
+
+#unDevoured {
+    border: midnightblue;
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#devoured {
+    border: midnightblue;
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit_div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }

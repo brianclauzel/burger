@@ -1,35 +1,38 @@
 <h1>Burger Baby</h1>
 
-<h3>Saved Burgers</h3>
 
-<ul>
-  {{#each burgers}}
-  	<li>
-      {{#unless devoured}}
-  	   <p>ID: {{this.id}}</p>
-       <p>Wish: {{this.burger_name}}</p>
-       <p>Devoured: {{this.devoured}}</p>
-       <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">Devour!</button>
-      {{/unless}}
-  	</li>
-  {{/each}}
-</ul>
+<div id="burger_container">
+  <div id="unDevoured">
+    <h3>Saved Burgers</h3>
+      <ul>
+        {{#each burgers}}
+          
+            {{#unless devoured}}
+            <li># {{this.id}}</li>
+            <li class="item_name">Burger: {{this.burger_name}}</li>
+            <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">Devour!</button>
+            {{/unless}}
+         
+        {{/each}}
+      </ul>
+  </div>
 
-<h3>Devoured Burgers</h3>
-<ul>
-  {{#each burgers}}
-  	<li>
-      {{#if devoured}}
-  	   <p>ID: {{this.id}}</p>
-       <p>Wish: {{this.burger_name}}</p>
-       <p>Devoured: {{this.devoured}}</p>
-      {{/if}}
-  	</li>
-  {{/each}}
-</ul>
+  <div id="devoured">
+    <h3>Devoured Burgers</h3>
+      <ul>
+        {{#each burgers}}
+          
+            {{#if devoured}}
+            <li># {{this.id}}</li>
+            <li class="item_name">Burger: {{this.burger_name}}</li>
+            {{/if}}
+          
+        {{/each}}
+      </ul>
+  </div>
+</div>
 
-
-<div>
+<div id="submit_div">
   <form class="create-form">
 
   <div class="form-group">
