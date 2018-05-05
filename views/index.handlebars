@@ -16,6 +16,31 @@
         {{/each}}
       </ul>
   </div>
+<ul>
+  {{!-- {{#each burgers}}
+  
+      {{#unless devoured}}
+  	   <li>ID: {{this.id}}</li>
+       <li>Wish: {{this.burger_name}}</li>
+       <li>Devoured: {{this.devoured}}</li>
+       <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">Devour!</button>
+      {{/unless}}
+
+  {{/each}}
+</ul> --}}
+
+<h3>Devoured Burgers</h3>
+{{!-- <ul>
+  {{#each burgers}}
+  
+      {{#if devoured}}
+  	   <li>ID: {{this.id}}</li>
+       <li>Wish: {{this.burger_name}}</li>
+       <li>Devoured: {{this.devoured}}</li>
+      {{/if}}
+
+  {{/each}}
+</ul> --}}
 
   <div id="devoured">
     <h3>Devoured Burgers</h3>
@@ -35,10 +60,10 @@
 <div id="submit_div">
   <form class="create-form">
 
-  <div class="form-group">
+  <div class="form-grouli">
     <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-    <button type="submit">Submit</button>
+    <inliut tylie="text" id="ca" name="name">
+    <button tylie="submit">Submit</button>
   </div>
 </div>
 
