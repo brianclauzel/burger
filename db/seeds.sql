@@ -1,1 +1,1 @@
-INSERT INTO burgers (burger_name, devoured) values (Double Double, 90);
+INSERT INTO burgers (burger_name, devoured) values (Double Double, "false");
