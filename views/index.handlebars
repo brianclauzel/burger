@@ -1,12 +1,16 @@
-<h1>Burger Baby</h1>
+<h1 class="burger_baby">Burger Baby</h1>
 
+<div id="image_container">
+  <img src="/assets/img/burger.png" style="height: 150px;
+    width: 150px;">
+</div>
 
 <div id="burger_container">
   <div id="unDevoured">
-    <h3>Saved Burgers</h3>
+    <h3 id="saved_h3">Saved Burgers</h3>
       <ul>
+        {{!-- <li id="textToHide">Enter a Burger!</li> --}}
         {{#each burgers}}
-          
             {{#unless devoured}}
             <li># {{this.id}}</li>
             <li class="item_name">Burger: {{this.burger_name}}</li>
@@ -18,10 +22,9 @@
   </div>
 
   <div id="devoured">
-    <h3>Devoured Burgers</h3>
+    <h3 id="devoured_h3">Devoured Burgers</h3>
       <ul>
         {{#each burgers}}
-          
             {{#if devoured}}
             <li># {{this.id}}</li>
             <li class="item_name">Burger: {{this.burger_name}}</li>
@@ -38,7 +41,9 @@
   <div class="form-group">
     <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
-    <button type="submit">Submit</button>
+    <button type="submit" id="sub">Submit</button>
   </div>
 </div>
+
+
 
